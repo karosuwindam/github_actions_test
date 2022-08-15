@@ -16,11 +16,9 @@
 #            git push origin $(cat TAG_NAME)
 name: Git Tag
 on:
- pull_request:
+ push:
    branches:
      - main
-   types:
-     - closed
 jobs:
  main:
    runs-on: ubuntu-latest
