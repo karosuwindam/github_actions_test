@@ -7,7 +7,7 @@ on:
       - "**.txt"
   workflow_dispatch:
 jobs:
-  scan:
+  main:
     runs-on: ubuntu-last
     steps:
       - uses: actions/checkout@v3
