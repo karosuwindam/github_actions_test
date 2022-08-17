@@ -4,6 +4,7 @@ on:
     paths:
       - "!**.md"
       - "!.github/workflows/*"
+      - "**.txt"
   workflow_dispatch:
 jobs:
   scan:
@@ -11,4 +12,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Hello World
-        run: echo "Hello World"
+        run: |
+          echo "Hello World"
