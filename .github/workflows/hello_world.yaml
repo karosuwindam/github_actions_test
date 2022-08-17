@@ -1,0 +1,14 @@
+name: Git Hello
+on:
+  pull_request:
+    paths:
+      - "!**.md"
+      - "!.github/workflows/*"
+  workflow_dispatch:
+jobs:
+  scan:
+    runs-on: ubuntu-last
+    steps:
+      - uses: actions/checkout@v3
+      - name: Hello World
+        run: echo "Hello World"
