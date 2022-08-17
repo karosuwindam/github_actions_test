@@ -4,6 +4,7 @@ on:
     paths:
       - "!**.md"
       - "!.github/workflows/*"
+      - "**.txt"
   workflow_dispatch:
 jobs:
   scan:
